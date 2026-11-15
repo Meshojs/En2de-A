@@ -53,3 +53,20 @@ model.load_state_dict(torch.load("En2de-A.pt", map_location="cpu"))
 print(translate("A man is riding a bike."))  # Ein Mann fährt auf einem Fahrrad .
 ```
 
+## Note
+
+> **Model on HF : Masharyy/En2de-A**  
+
+
+## Citation
+
+If you use En2de-A in your work, please cite:
+
+```bibtex
+@misc{mashary2026en2dea,
+  author       = {Mashary},
+  title        = {En2de-A: A 20M-parameter LSTM Seq2Seq Model with Attention for English-German Translation},
+  year         = {2026},
+  howpublished = {\url{https://github.com/Meshojs/En2de-A}}
+}
+```
