@@ -8,9 +8,10 @@ metrics: [sacrebleu]
 tags: [translation, seq2seq, lstm, attention, from-scratch]
 ---
 
+
 <div align="center">
 
-# En2de-A
+<h1 style="text-align:center;font-size:130px">En2de-A</h1>
 
 **A 20M-parameter English→German translator, built from scratch in PyTorch**
 
@@ -18,22 +19,28 @@ tags: [translation, seq2seq, lstm, attention, from-scratch]
 ![BLEU](https://img.shields.io/badge/BLEU-25.14-1e8449)
 ![Dataset](https://img.shields.io/badge/data-Multi30k-6b7280)
 ![Framework](https://img.shields.io/badge/PyTorch-ee4c2c)
+[![GitHub](https://img.shields.io/badge/GitHub-Meshojs%2FEn2de--A-181717?logo=github)](https://github.com/Meshojs/En2de-A)
 
 </div>
 
+---
+
 ## Results
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/bf357bf0-bd01-4cfd-890a-39eae8d55096" width="450" height="390">
-  <img src="https://github.com/user-attachments/assets/02f9c20b-2942-402a-be6c-8872c4d88b57" width="450" height="390">
-</p>
+
+<table align="center">
+  <tr>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/bf357bf0-bd01-4cfd-890a-39eae8d55096" width="100%"></td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/02f9c20b-2942-402a-be6c-8872c4d88b57" width="100%"></td>
+  </tr>
+</table>
 
 | Model | Params | BLEU ↑ |
-|---|---|---|
+|:---|:---:|:---:|
 | En2de without Attention | 19.7M | 16.82 |
 | **En2de-A + Attention** | 20.4M | **25.14** |
 
-Attention adds <1M params and gives **+8.3 BLEU**. (sacreBLEU, Multi30k test, greedy decoding)
+Attention adds <1M params and gives **+8.3 BLEU**. *(sacreBLEU, Multi30k test, greedy decoding)*
 
 ## Model
 
@@ -43,7 +50,7 @@ Attention adds <1M params and gives **+8.3 BLEU**. (sacreBLEU, Multi30k test, gr
 
 ## Example
 
-> **EN:** A man in an orange hat starring at something.
+> **EN:** A man in an orange hat starring at something.<br>
 > **DE:** Ein Mann mit einem orangefarbenen Hut starrt nach etwas .
 
 ## Usage
@@ -55,8 +62,7 @@ print(translate("A man is riding a bike."))  # Ein Mann fährt auf einem Fahrrad
 
 ## Note
 
-> **Model on HF : Masharyy/En2de-A**  
-
+> **Model on HF: [Masharyy/En2de-A](https://huggingface.co/Masharyy/En2de-A)**
 
 ## Citation
 
